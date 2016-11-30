@@ -61,12 +61,12 @@
     width: 100%;
     table-layout: fixed;
 
-    &.m-grid-auto {  
+    &.m-grid-auto {
 	    width: auto;
 	}
 
 	&.m-grid-full-height {
-	    height: 100%; 
+	    height: 100%;
 
 	    > .m-grid-row {
 	    	height: 100%;
@@ -105,7 +105,7 @@
 	    display: table-cell;
 	    text-align: left;
 	    vertical-align: top;
-	    
+
 	    // col options
 	    &.m-grid-col-full-width {
 		    width: 100%;
@@ -187,7 +187,9 @@
     @include make-grid(lg);
 }
 
-// Responsive grids 
+
+
+// Responsive grids
 
 //== convert to block below LG resolution
 @each $breakpoint, $breakpoint-width in $m-layout-breakpoints {
@@ -195,7 +197,7 @@
 	    .m-grid.m-grid-responsive-#{$breakpoint} {
 	        display: block;
 	        width: auto;
-	        
+
 	        > .m-grid-row,
 	        > .m-grid-row > .m-grid-col,
 	        > .m-grid-col {
